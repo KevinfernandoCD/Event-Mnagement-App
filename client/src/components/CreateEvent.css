@@ -1,0 +1,279 @@
+.contain-div {
+
+    width:100%;
+    background-color: white;
+    padding: 10px 0px;
+    display: flex;
+    justify-content:space-between;
+    margin-top: -20px;
+    position: relative;
+
+}
+.error-message-div{
+
+    position: absolute;
+    width:250px;
+    height: 50px;
+    background-color: whitesmoke;
+    top: -7%;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px 1px #888888;
+    animation:noti 8s;
+    left: -100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    color: rgb(212, 83, 83);
+    font-weight: bold;
+    padding: 0px 20px;
+
+}
+
+@keyframes noti {
+
+    0% {
+
+        left:-100%;
+
+
+    }
+
+    20%{
+
+        left: 0%;
+    }
+
+    50%{
+
+        left: 0%;
+
+        
+    }
+
+    100% {
+
+
+        left: -100%;
+    
+    }
+    
+}
+
+.form-el {
+
+    width:400px;
+    padding: 30px 15px;
+    box-shadow: 5px 10px 8px 1px #888888;
+    border-radius: 5px;
+    animation:pop 1s;
+    position:relative;
+    
+
+}
+
+.loading-line{
+
+    position: absolute;
+    width:100%;
+    background-image: linear-gradient(to right, #d319b4, #9769c6);
+    height:5px;
+    top:0;
+    left:0;
+    animation: loading 1s;
+}
+
+@keyframes loading {
+
+    from {
+
+        width:0%;
+    }
+
+    to{
+        width:100%;
+    }
+}
+
+.heading{
+
+    font-size: 45px;
+    color: rgb(32, 32, 32);
+    margin-top: 0px;
+}
+
+.sub-heading{
+
+    font-size: 13px;
+    color:gray;
+    margin-top: -20px;
+}
+
+.event-prop{
+
+    font-size: 12px;
+    color:rgb(43, 43, 43);
+    margin: 15px 0px;
+    
+}
+
+.event-val{
+
+    border: none;
+    background-color: whitesmoke;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.createbtn{
+
+    padding:10px;
+    border:none;
+    border-radius: 5px;
+    color:black;
+    font-weight: bolder;
+    cursor: pointer;
+    transition:all 0.3s;
+    margin-top: 20px;
+    background-color: rgb(38, 38, 38);
+        color: white;
+
+}
+
+.createbtn:hover{
+
+    background-color: rgb(65, 65, 65);
+
+    
+
+}
+
+.anime-div{
+
+    width:600px;
+    margin-right:20px;
+    position: relative;
+
+}
+.stripe1{
+
+    width:75px;
+    position: absolute;
+    height: 40%;
+    background-color:#D90093 ;
+    border-radius: 100px;
+    top:50%;
+    left:50%;
+    transform: translate(-200%, -50%);
+    cursor: pointer;
+    animation: intro1 1s;
+    box-shadow: 5px 10px 8px 1px #888888;
+
+}
+.stripe2 {
+
+    width: 75px;
+    position: absolute;
+    height: 80%;
+    background-color: #6E30AB;
+    border-radius: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: intro2 1.5s;
+    box-shadow: 5px 10px 8px 1px #888888;
+}
+.stripe3 {
+
+    width: 75px;
+    position: absolute;
+    height: 60%;
+    background-color: #D90093;
+    border-radius: 100px;
+    top: 70%;
+    left: 50%;
+    transform: translate(100%, -50%);
+    cursor: pointer;
+    animation: intro3 2s;
+    box-shadow: 5px 10px 8px 1px #888888;
+}
+
+@keyframes intro1 {
+
+    from{
+        top: -100%;
+
+    }
+
+    to{
+
+        top: 50%;
+    }
+    
+}
+@keyframes intro2 {
+
+    from {
+            top: -100%;
+    
+        }
+    
+        to {
+    
+            top: 50%;
+        }
+
+}
+@keyframes intro3 {
+
+    from {
+            top: -100%;
+    
+        }
+    
+        to {
+    
+            top: 70%;
+        }
+
+}
+
+.brand{
+
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(43, 43, 43);
+    position: absolute;
+    top:15%;
+    animation: pop 1s;
+}
+
+.domain{
+    font-size: 15px;
+   
+}
+
+@keyframes pop {
+
+    from{
+
+        opacity: 0;
+
+    }
+
+    to{
+
+        opacity: 1;
+    }
+   
+}
+
+.desc{
+
+    max-height:100px;
+    max-width:100%;
+    border:none;
+    background-color: whitesmoke;
+    border-radius:5px;
+}

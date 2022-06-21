@@ -1,0 +1,322 @@
+.backdrop-div {
+
+    width:100%;
+    height:700px;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    background-size: 100%;
+    position: relative;
+   
+    
+}
+
+.welcome-div {
+
+    box-shadow: 5px 10px 8px 1px #888888;
+    width:400px;
+    background-color: whitesmoke;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    border-radius: 5px;
+    position: absolute;
+    left: 10%;
+    top:5%;
+    padding: 30px 30px;
+    animation: intro 0.8s;
+    z-index: 1;
+
+}
+
+@keyframes intro {
+
+    from {
+
+        left:-100%;
+        opacity: 0;
+    }
+
+    to {
+
+        left:10%;
+        opacity: 1;
+    }
+
+    
+}
+
+.animation-div {
+
+    width: 400px;
+    position:absolute;
+    left: 57%;
+    top:25%;
+    animation:popup 1s;
+
+}
+
+@keyframes popup {
+
+    from {
+        opacity: 0;
+
+    }
+
+    to{
+        opacity: 1;
+    }
+
+}
+
+.under-div{
+
+    position:absolute;
+    z-index: 0;
+    left: 17%;
+    top: 45%;
+    animation: godown 1s;
+}
+
+@keyframes godown {
+
+    from{
+
+        opacity: 0;
+        top: 20%;
+    }
+
+to{
+
+    opacity: 1;
+    top: 45%;
+}
+    
+}
+
+.welcome-div > h2{
+
+    color:rgb(42, 42, 42);
+    font-size: 70px;
+    margin-top: 0px;
+
+}
+
+.welcome-div > p {
+
+    color:gray;
+    font-size:12px;
+    margin-top: -50px;
+}
+
+.instruction {
+
+    color: black;
+    font-size: 12px;
+    
+}
+
+form {
+
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding:5px 0px
+
+}
+
+.input {
+
+    padding: 10px;
+    border:none;
+    background-color: rgb(225, 225, 225);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.input:focus {
+
+    outline:none;
+
+}
+
+.form-lable{
+
+    font-size:12px;
+    font-weight:light;
+    color: black;
+    margin: 15px 0px;
+
+}
+.submitbtn {
+
+  border: none;
+  padding: 13px;
+  margin-top: 20px;
+  background-color: #6E30AB;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.submitbtn:hover{
+    background-color:#8440c9
+}
+.logo{
+
+    width:500px;
+}
+
+.signup-link{
+
+    font-size: 12px;
+    cursor:pointer;
+    margin-left: 8px;
+}
+
+.signup-link:hover{
+    text-decoration:underline
+}
+
+.link-line{
+
+    color: gray;
+    font-size: 12px;
+
+}
+.sign-up-div{
+
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 13px;
+
+}
+
+.signupbtn{
+    border: none;
+        padding: 13px;
+        margin-top: 20px;
+        background-color: #bb39a5;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+}
+.signupbtn:hover{
+
+    background-color: #d63dbd;
+
+}
+
+.notify-div{
+
+    background-color: white;
+    width: 250px;
+    position:absolute;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    padding:10px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px 1px #888888;
+    top: -9%;
+    left: -100%;
+    animation: notify 5s;
+}
+
+.notify-message {
+
+    font-weight: 500;
+
+}
+
+.loader{
+
+    width: 0%;
+    height: 7px;
+    background-image: linear-gradient(to right,#d319b4, #9769c6);
+    border-radius: 3px;
+    animation:expand 3s;
+    position:absolute;
+    top:0%;
+    left: 0%;
+    
+}
+
+@keyframes expand{
+
+    from{
+
+        width:0%;
+        background-image: linear-gradient(to right, #d319b4, #9769c6);
+    }
+    to{
+        width:100%;
+        background-image: linear-gradient(to left, #d319b4, #9769c6);
+    }
+
+}
+
+
+
+@keyframes notify {
+
+   0%{
+
+    left:-100%;
+
+   }
+
+   20%{
+
+    left:0%;
+   }
+
+   50% {
+
+    left: 0%;
+
+   }
+
+   100%{
+
+    left: -100%;
+   }
+}
+
+.notify-div>p{
+
+    color: black(224, 78, 78);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.notify-logo{
+
+    width:100px;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .animation-div{
+
+        display:none;
+        opacity:0;
+        visibility: none;
+
+    }
+
+        .welcome-div{
+
+            left: 30%;
+        }
+
+
+    
+}

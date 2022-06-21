@@ -1,0 +1,156 @@
+.main-nav{
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    height:3.5rem;
+    left: 0;
+    top:0;
+    
+}
+
+.main-navigation-logo{
+
+    width: 100px;
+    height: 20px;
+    
+}
+
+.main-navigation-logo > img{
+    
+    width: 160px;
+
+}
+
+.main-nav-items {
+   
+    padding: 10px;
+}
+
+.main-nav-items > ul{
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+        
+}
+
+.main-nav-items>ul>li{
+
+    margin-left:120px;
+    list-style:none;
+    font-size: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width:100px;
+    height: 50px;
+  
+}
+
+.Link:hover {
+
+    border: 1px solid transparent;
+    padding: 5px 25px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+
+.Link {
+
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+    font-weight: bolder;
+    transition:all 0.3s;
+
+}
+
+.active {
+
+    border: 1px solid transparent;
+    padding: 5px 25px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 4px;
+
+}
+
+.selecteddiv{
+
+    padding: 4px;
+    background-color:rgb(232, 41, 41);
+    border-radius:50%;
+    width: 2px;
+    height: 2px;
+
+}
+
+
+@media screen and (max-width:768px) {
+
+   
+.main-nav-items>ul>li{
+
+    margin-left: 40px;
+   }
+
+}
+
+@media screen and (max-width:540px) {
+
+    .main-nav-items>ul>li {
+    
+            margin-left: 10px;
+        }
+
+.main-navigation-logo{
+
+    margin-left: -30px;
+}
+}
+
+@media screen and (max-width:375px) {
+
+    .main-nav-items>ul>li {
+
+        margin-left: 10px;
+    }
+    .main-nav-items>ul{
+        flex-direction: column;
+        margin-top:-30px
+
+    }
+
+        .main-nav-items{
+
+           
+        }
+
+    .main-navigation-logo {
+
+        margin-left: -30px;
+    }
+
+        
+}
+
+@media screen and (max-width:415px) {
+
+    .main-nav-items>ul>li {
+
+        margin-left: 10px;
+    }
+
+    .main-navigation-logo {
+
+        margin-left: -30px;
+    }
+        .main-nav-items>ul {
+            flex-direction: column;
+            margin-top: -30px
+        }
+}
